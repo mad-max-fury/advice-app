@@ -17,6 +17,7 @@
 <body>
 
   <main class="main">
+    <!-- get random quotes -->
     <div class="advice">
       <span class="tagName">
         <span>ADVICE</span> <span id="slip">#...</span>
@@ -31,8 +32,23 @@
         <img src="./images/icon-dice.svg" alt="dice image">
       </button>
     </div>
-
+    <!-- search for advice-->
+    <form class="adviceSearch" id="adviceSearch">
+      <label for="adviceSearchInput" style="display:none;">Search any kind of advice</label>
+      <input type="text" id="adviceSearchInput" name="adviceSearchInput"
+        placeholder="search for any kind of advice here ..." />
+      <button class="searchBtn" id="searchBtn" type="submit">
+        <img src="./images/icon-dice.svg" alt="dice image">
+      </button>
+    </form>
+    <!-- search results-->
+    <div class="searchResult" id="searchResult">
+      <label for="adviceSearchInput"># search an for an advice</label>
+    </div>
   </main>
 </body>
 
 </html>
+
+
+<!-- https://api.adviceslip.com/advice/search/man -->
